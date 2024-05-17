@@ -11,8 +11,9 @@ import javax.servlet.http.HttpSession;
 
 import com.org.dao.UserDao;
 import com.org.dto.User;
-@WebServlet("/Register")
-public class ResisterUser  extends HttpServlet{
+
+@WebServlet("/register")
+public class ResisterUser extends HttpServlet{
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -21,7 +22,7 @@ public class ResisterUser  extends HttpServlet{
 		int age = Integer.parseInt(req.getParameter("age"));
 		String email = req.getParameter("email");
 		String password = req.getParameter("password");
-		long mobile = Long.parseLong(req.getParameter("number"));
+		long mobile = Long.parseLong(req.getParameter("mobile"));
 		
 		User user = new User();
 		user.setName(name);

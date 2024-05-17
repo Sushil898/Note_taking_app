@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSession;
 
 import com.org.dao.UserDao;
 import com.org.dto.User;
-@WebServlet("/Login")
+@WebServlet("/login")
 public class LoginUser extends HttpServlet
 {
 	@Override
